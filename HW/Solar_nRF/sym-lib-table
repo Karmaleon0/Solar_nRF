@@ -1,0 +1,7 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "MDBT42TV-192K")(type "KiCad")(uri "${KIPRJMOD}/Components/MDBT42TV-192K.kicad_sym")(options "")(descr ""))
+  (lib (name "ABS07-32.768KHZ-T")(type "KiCad")(uri "${KIPRJMOD}/Components/ABS07-32.768KHZ-T/ABS07-32.768KHZ-T.kicad_sym")(options "")(descr ""))
+  (lib (name "TC2050-IDC")(type "KiCad")(uri "${KIPRJMOD}/Components/TC2050-IDC/TC2050-IDC.kicad_sym")(options "")(descr ""))
+  (lib (name "TC2030-IDC")(type "KiCad")(uri "${KIPRJMOD}/Components/TC2030-IDC/TC2030-IDC.kicad_sym")(options "")(descr ""))
+)

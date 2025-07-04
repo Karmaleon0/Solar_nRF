@@ -1,0 +1,7 @@
+west:
+  command: C:\ncs\toolchains\0b393f9e1b\opt\bin\Scripts\west build --build-dir c:/Users/Nathan/Documents/PocketConcepts/Solar_ATTINY/FW/peripheral_lbs/build
+    c:/Users/Nathan/Documents/PocketConcepts/Solar_ATTINY/FW/peripheral_lbs --pristine
+    --board nrf52dk/nrf52805 --no-sysbuild -- -DCONF_FILE=prj_minimal.conf -DEXTRA_DTC_OVERLAY_FILE=nrf52dk_nrf52805.overlay
+    -DBOARD_ROOT=c:/users/nathan/documents/pocketconcepts/solar_attiny/fw/peripheral_lbs
+  topdir: c:\ncs\v3.0.2
+  version: 1.2.0

@@ -1,0 +1,192 @@
+(footprint "WE-TPC_2828"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "<b>WE-TPC SMD Tiny Power Inductorr<br></b><br>Size: 2828, SMT, 2pins<br>LXWXH=2.8X2.8X2.8mm")
+	(property "Reference" "REF**"
+		(at 0 -2.508 0)
+		(layer "F.SilkS")
+		(uuid "1f24489e-0097-4562-a99a-a706063da3aa")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "WE-TPC_2828"
+		(at 0 2.492 0)
+		(layer "F.Fab")
+		(uuid "17351fe6-f53a-4242-b78b-0447b0fefcd0")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5eb109a0-850b-4c4f-8507-8c446fbfaa0b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fc7d07e5-f7af-49fa-b016-73ae9811744d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7b238318-7e75-4b56-b1f8-a690c91d3c8f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.5 -0.3)
+		(end -1.5 0.3)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "db11bfe6-18d1-469b-819f-f6c02dc1f7a4")
+	)
+	(fp_line
+		(start 1.5 -0.3)
+		(end 1.5 0.3)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9f090ab7-6ec8-4a35-b279-9ea7d61c63dd")
+	)
+	(fp_poly
+		(pts
+			(xy -1.75 -1.8) (xy 1.75 -1.8) (xy 1.75 1.8) (xy -1.75 1.8)
+		)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.CrtYd")
+		(uuid "8cf9493b-3168-4734-96d6-d28b2a843508")
+	)
+	(fp_line
+		(start -1.4 -0.5)
+		(end -1.4 0.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c548d04b-c1b2-4f87-a359-02f5871c230d")
+	)
+	(fp_line
+		(start -1.4 0.5)
+		(end -0.5 1.4)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "550f082a-b9e1-40a2-a528-4be795f64cd6")
+	)
+	(fp_line
+		(start -0.5 -1.4)
+		(end -1.4 -0.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b7473395-e4ca-4b4f-9b29-51a065d8baf8")
+	)
+	(fp_line
+		(start -0.5 -1.4)
+		(end 0.5 -1.4)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b45b479e-f5b6-40b8-ae7b-616f6f2c2510")
+	)
+	(fp_line
+		(start -0.5 1.4)
+		(end 0.5 1.4)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "dcc147ed-53ea-441f-84a0-9303ffd65afc")
+	)
+	(fp_line
+		(start 0.5 -1.4)
+		(end 1.4 -0.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e0a147d5-89ed-442e-96f5-4ab495457a3b")
+	)
+	(fp_line
+		(start 1.4 -0.5)
+		(end 1.4 0.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "35c5e28d-d737-4c7c-bca9-5f5b2fe0caaf")
+	)
+	(fp_line
+		(start 1.4 0.5)
+		(end 0.5 1.4)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "674a09c7-1541-493e-9ab2-c7da79786ab8")
+	)
+	(pad "1" smd rect
+		(at 0 -1.1)
+		(size 3.2 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.102)
+		(uuid "f304c899-8e01-4dbb-8534-449be5e20f57")
+	)
+	(pad "2" smd rect
+		(at 0 1.1)
+		(size 3.2 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.102)
+		(uuid "b487e751-fbc4-42dc-8d6e-68d2bf93a1ee")
+	)
+)

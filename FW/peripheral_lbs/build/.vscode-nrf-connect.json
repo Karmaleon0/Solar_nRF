@@ -1,0 +1,22 @@
+{
+  "toolchainPath": "c:\\ncs\\toolchains\\0b393f9e1b",
+  "sdkPath": "c:\\ncs\\v3.0.2",
+  "board": "nrf52dk/nrf52805",
+  "boardDir": "c:\\ncs\\v3.0.2\\zephyr\\boards\\nordic\\nrf52dk",
+  "boardDirs": [
+    "c:\\ncs\\v3.0.2\\zephyr\\boards\\nordic\\nrf52dk"
+  ],
+  "sysbuild": false,
+  "optimizations": "none",
+  "cmakeArgs": [],
+  "confFiles": [
+    "prj_minimal.conf"
+  ],
+  "buildDirectory": "build",
+  "kconfigFragments": [],
+  "snippets": [],
+  "dtcOverlays": [],
+  "extraDtcOverlays": [
+    "nrf52dk_nrf52805.overlay"
+  ]
+}

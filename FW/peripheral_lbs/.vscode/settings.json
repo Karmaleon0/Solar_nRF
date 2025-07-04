@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "dk_buttons_and_leds.h": "c",
+        "conn.h": "c",
+        "lbs.h": "c",
+        "settings.h": "c",
+        "sensor.h": "c",
+        "gatt.h": "c",
+        "byteorder.h": "c",
+        "hci.h": "c",
+        "gpio.h": "c"
+    }
+}

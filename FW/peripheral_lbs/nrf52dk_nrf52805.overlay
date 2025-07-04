@@ -1,0 +1,49 @@
+// To get started, press Ctrl+Space to bring up the completion menu and view the available nodes.
+
+// You can also use the buttons in the sidebar to perform actions on nodes.
+// Actions currently available include:
+
+// * Enabling / disabling the node
+// * Adding the bus to a bus
+// * Removing the node
+// * Connecting ADC channels
+
+// For more help, browse the DeviceTree documentation at https://docs.zephyrproject.org/latest/guides/dts/index.html
+// You can also visit the nRF DeviceTree extension documentation at https://docs.nordicsemi.com/bundle/nrf-connect-vscode/page/guides/ncs_configure_app.html#devicetree-support-in-the-extension
+
+&uicr {
+    gpio-as-nreset;
+};
+
+&reg {
+    // force LDO instead of DC-DC
+    regulator-initial-mode = <NRF5X_REG_MODE_LDO>;
+};
+
+&i2c0 {
+    status = "okay";
+
+    tmp112@48 {
+        compatible = "ti,tmp112";
+        reg = <0x49>;
+        label = "TMP112";
+    };
+};
+
+&pinctrl {
+    i2c0_default: i2c0_default {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 0, 16)>,
+                    <NRF_PSEL(TWIM_SCL, 0, 14)>;
+            bias-pull-up;
+        };
+    };
+
+    i2c0_sleep: i2c0_sleep {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 0, 16)>,
+                    <NRF_PSEL(TWIM_SCL, 0, 14)>;
+            bias-pull-up;
+        };
+    };
+};
