@@ -1534,6 +1534,200 @@
 				)
 			)
 		)
+		(symbol "Sensor_Optical:BPW34"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0.508 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "BPW34"
+				(at -1.016 -2.794 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "OptoDevice:Osram_DIL2_4.3x4.65mm_P5.08mm"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.vishay.com/docs/81521/bpw34.pdf"
+				(at -1.27 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Silicon PIN Photodiode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "opto PIN photodiode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Osram*DIL2*4.3x4.65mm*P5.08*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BPW34_0_1"
+				(polyline
+					(pts
+						(xy -2.54 1.27) (xy -2.54 -1.27)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 1.778) (xy -1.524 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 3.302) (xy -2.032 1.778) (xy -2.032 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy -2.54 0) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 3.302) (xy -0.762 1.778) (xy -0.762 2.286) (xy -0.762 1.778) (xy -0.254 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BPW34_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Transistor_FET:IRLML6244"
 			(pin_names hide)
 			(exclude_from_sim no)
@@ -2586,12 +2780,6 @@
 		)
 	)
 	(junction
-		(at 236.22 26.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "03c017bf-5e02-4ed2-b219-9b14a4125856")
-	)
-	(junction
 		(at 214.63 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2622,12 +2810,6 @@
 		(uuid "23e5d38b-55e3-4801-81cc-eb5ca46d677c")
 	)
 	(junction
-		(at 236.22 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2a72c7ef-3eaf-4629-a41c-cd2a35241a9f")
-	)
-	(junction
 		(at 138.43 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2638,6 +2820,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "390c92c8-a199-4661-90c0-97bcbcfdd90e")
+	)
+	(junction
+		(at 195.58 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3960cc4b-75cf-4bca-986c-43d97f5ae744")
 	)
 	(junction
 		(at 55.88 130.81)
@@ -2722,12 +2910,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a53d5d77-b734-47f1-9f9e-335e28e9e4c0")
-	)
-	(junction
-		(at 220.98 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b1c97341-9764-4e9a-b429-48f3aa715f9a")
 	)
 	(junction
 		(at 203.2 121.92)
@@ -2821,7 +3003,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 26.67) (xy 236.22 26.67)
+			(xy 220.98 26.67) (xy 245.11 26.67)
 		)
 		(stroke
 			(width 0)
@@ -3011,26 +3193,6 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 48.26) (xy 236.22 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "164aa9f0-be66-4330-a90c-db3bd1b33a97")
-	)
-	(wire
-		(pts
-			(xy 236.22 26.67) (xy 245.11 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "176de761-485b-4a25-a1af-12816c7e4004")
-	)
-	(wire
-		(pts
 			(xy 194.31 85.09) (xy 194.31 93.98)
 		)
 		(stroke
@@ -3091,7 +3253,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 48.26) (xy 236.22 50.8)
+			(xy 195.58 48.26) (xy 195.58 52.07)
 		)
 		(stroke
 			(width 0)
@@ -3181,6 +3343,16 @@
 	)
 	(wire
 		(pts
+			(xy 55.88 52.07) (xy 55.88 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31b6cc06-b729-4d4a-85af-c69a02ba224d")
+	)
+	(wire
+		(pts
 			(xy 186.69 26.67) (xy 195.58 26.67)
 		)
 		(stroke
@@ -3188,6 +3360,16 @@
 			(type default)
 		)
 		(uuid "3251eed6-e9e2-496e-9d9b-5e01d735ce6d")
+	)
+	(wire
+		(pts
+			(xy 55.88 30.48) (xy 55.88 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32dddb14-2999-43a6-8626-fbc0a8d3dd93")
 	)
 	(wire
 		(pts
@@ -3378,6 +3560,16 @@
 			(type default)
 		)
 		(uuid "6428c784-66f7-42c6-886a-49ae3b0e2c25")
+	)
+	(wire
+		(pts
+			(xy 53.34 30.48) (xy 55.88 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "643e6b32-7d9e-4e0e-a99c-8a8454be3a03")
 	)
 	(wire
 		(pts
@@ -4031,16 +4223,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 40.64) (xy 236.22 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cbf0a63c-c11a-46b7-b529-bce7931616c0")
-	)
-	(wire
-		(pts
 			(xy 214.63 48.26) (xy 208.28 48.26)
 		)
 		(stroke
@@ -4118,16 +4300,6 @@
 			(type default)
 		)
 		(uuid "d922d92e-219b-4d79-93b9-185098928e70")
-	)
-	(wire
-		(pts
-			(xy 236.22 26.67) (xy 236.22 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9e5ed63-17d1-4103-93ac-b7b2d35e7ecb")
 	)
 	(wire
 		(pts
@@ -4357,6 +4529,19 @@
 			(type none)
 		)
 		(uuid 7c176082-c043-4f8a-bb6e-ba5a83871fad)
+	)
+	(rectangle
+		(start 41.275 20.32)
+		(end 69.215 73.66)
+		(stroke
+			(width 1)
+			(type dash)
+			(color 255 0 255 0.6)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ac688941-34ba-405c-a9b6-037f1b75d278)
 	)
 	(rectangle
 		(start 99.06 113.03)
@@ -4640,6 +4825,28 @@
 		(uuid "1885d959-ed16-4ae5-91c0-3c22c493df3b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 95.7724 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+PD"
+		(shape input)
+		(at 53.34 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "351c49be-f443-4025-b62e-aa51634f4e5f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.2424 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5093,7 +5300,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "19a9a7e6-9813-4774-a730-b5582509017a")
 		(property "Reference" "C7"
 			(at 208.788 39.878 0)
@@ -5520,7 +5727,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "2ac20052-d7d7-4dc4-ad24-be041f511af9")
 		(property "Reference" "C9"
 			(at 221.488 39.878 0)
@@ -5779,6 +5986,72 @@
 			(project "Solar_ATTINY"
 				(path "/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 55.88 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "46c48675-60a3-4ea5-a4e7-c32ebbcb8ed4")
+		(property "Reference" "#PWR01"
+			(at 55.88 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 55.88 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.88 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 55.88 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c5a3170e-7d6f-49e5-952c-fb623159097c")
+		)
+		(instances
+			(project "Solar_nRF.kicad_pro"
+				(path "/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9"
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -6330,6 +6603,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Sensor_Optical:BPW34")
+		(at 55.88 46.99 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d059276-19a1-4fbc-9083-e93810fd5676")
+		(property "Reference" "D2"
+			(at 58.42 46.647 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "BPW34"
+			(at 58.42 49.187 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "OptoDevice:Osram_DIL2_4.3x4.65mm_P5.08mm"
+			(at 51.435 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/81521/bpw34.pdf"
+			(at 55.88 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Silicon PIN Photodiode"
+			(at 55.88 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3140021a-0040-4131-9d02-eab3fce53ba9")
+		)
+		(pin "2"
+			(uuid "1e0f471f-0db6-4608-aafd-d205ad44350f")
+		)
+		(instances
+			(project "Solar_nRF.kicad_pro"
+				(path "/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 96.52 69.85 0)
 		(unit 1)
@@ -6874,7 +7217,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 236.22 50.8 0)
+		(at 195.58 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6882,7 +7225,7 @@
 		(dnp no)
 		(uuid "7ad9a7c8-684d-4971-8fc3-aec48aba7e41")
 		(property "Reference" "#PWR014"
-			(at 236.22 57.15 0)
+			(at 195.58 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6891,7 +7234,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 236.22 55.118 0)
+			(at 195.58 56.388 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6899,7 +7242,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 236.22 50.8 0)
+			(at 195.58 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6908,7 +7251,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 236.22 50.8 0)
+			(at 195.58 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6917,7 +7260,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 236.22 50.8 0)
+			(at 195.58 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7627,75 +7970,6 @@
 			(project "Solar_ATTINY"
 				(path "/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 236.22 36.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "95344ef2-9f01-470c-8527-cd0d8a698c47")
-		(property "Reference" "SC1"
-			(at 236.728 39.878 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100mF"
-			(at 236.728 42.418 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "FT0H104ZF:CAPPRD508W154D1200H850"
-			(at 237.1852 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 236.22 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 236.22 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3f63e06b-21f8-43e7-842b-d184723b2346")
-		)
-		(pin "1"
-			(uuid "60a09b18-a0e7-4b1d-a680-c1ecc285e742")
-		)
-		(instances
-			(project "Solar_ATTINY"
-				(path "/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9"
-					(reference "SC1")
 					(unit 1)
 				)
 			)
@@ -8463,7 +8737,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "bc2d4a30-e77b-4442-9838-c7b4625840b3")
 		(property "Reference" "C6"
 			(at 202.438 39.878 0)
@@ -8602,7 +8876,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c7e6d0d0-551d-40cc-b74c-7d6157d54fb7")
 		(property "Reference" "C8"
 			(at 215.138 39.878 0)
@@ -9535,45 +9809,6 @@
 		)
 	)
 	(sheet
-		(at 41.91 24.13)
-		(size 27.94 26.67)
-		(stroke
-			(width 0.1524)
-			(type solid)
-			(color 255 0 255 1)
-		)
-		(fill
-			(color 255 0 255 1.0000)
-		)
-		(uuid "a006557e-30cd-43d1-8704-c7194d87d89c")
-		(property "Sheetname" "Solay Array"
-			(at 50.292 38.608 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Solar_Array.kicad_sch"
-			(at 43.434 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "Solar_ATTINY"
-				(path "/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9"
-					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 41.91 78.74)
 		(size 27.94 26.67)
 		(stroke
@@ -9603,7 +9838,7 @@
 			)
 		)
 		(instances
-			(project "Solar_ATTINY"
+			(project "Solar_nRF.kicad_pro"
 				(path "/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9"
 					(page "3")
 				)
