@@ -223,6 +223,7 @@
       "mfg": "",
       "mpn": ""
     },
+    "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
@@ -232,11 +233,26 @@
   },
   "erc": {
     "erc_exclusions": [
-      "power_pin_not_driven|1778000|1231900|dc5cf96f-576e-4f24-a5dc-ae23a3e96680|00000000-0000-0000-0000-000000000000|/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9|/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9|",
-      "power_pin_not_driven|1778000|1549400|7a1e975c-0a5e-403b-996f-09cefc8ce71b|00000000-0000-0000-0000-000000000000|/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9|/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9|",
-      "power_pin_not_driven|2159000|838200|9549f448-c4e7-4a2d-8844-8a0974e2c903|00000000-0000-0000-0000-000000000000|/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9/d60b6475-22b0-4ec1-b44c-89b070081b76|/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9/d60b6475-22b0-4ec1-b44c-89b070081b76|",
-      "power_pin_not_driven|2413000|812800|7bbcdf81-9c06-4cd5-a449-6e69a43a5ab4|00000000-0000-0000-0000-000000000000|||",
-      "power_pin_not_driven|2463800|1282700|bbcee5a2-342e-4f5d-b180-0b6a95b0f15a|00000000-0000-0000-0000-000000000000|/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9|/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9|"
+      [
+        "power_pin_not_driven|1778000|1231900|dc5cf96f-576e-4f24-a5dc-ae23a3e96680|00000000-0000-0000-0000-000000000000|/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9|/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9|",
+        ""
+      ],
+      [
+        "power_pin_not_driven|1778000|1549400|7a1e975c-0a5e-403b-996f-09cefc8ce71b|00000000-0000-0000-0000-000000000000|/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9|/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9|",
+        ""
+      ],
+      [
+        "power_pin_not_driven|2159000|838200|9549f448-c4e7-4a2d-8844-8a0974e2c903|00000000-0000-0000-0000-000000000000|/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9/d60b6475-22b0-4ec1-b44c-89b070081b76|/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9/d60b6475-22b0-4ec1-b44c-89b070081b76|",
+        ""
+      ],
+      [
+        "power_pin_not_driven|2413000|812800|7bbcdf81-9c06-4cd5-a449-6e69a43a5ab4|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "power_pin_not_driven|2463800|1282700|bbcee5a2-342e-4f5d-b180-0b6a95b0f15a|00000000-0000-0000-0000-000000000000|/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9|/26ccc791-aaeb-495c-a4ee-a4b186f2cfc9|",
+        ""
+      ]
     ],
     "meta": {
       "version": 0
@@ -423,10 +439,15 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
+      "footprint_filter": "ignore",
+      "footprint_link_issues": "warning",
+      "four_way_junction": "ignore",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
+      "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
+      "lib_symbol_mismatch": "warning",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -439,9 +460,14 @@
       "pin_not_driven": "error",
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
+      "same_local_global_label": "warning",
+      "similar_label_and_power": "warning",
       "similar_labels": "warning",
+      "similar_power": "warning",
       "simulation_model_issue": "ignore",
+      "single_global_label": "ignore",
       "unannotated": "error",
+      "unconnected_wire_endpoint": "warning",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -453,7 +479,7 @@
   },
   "meta": {
     "filename": "Solar_nRF.kicad_pro.kicad_pro",
-    "version": 1
+    "version": 3
   },
   "net_settings": {
     "classes": [
@@ -468,6 +494,7 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.4,
         "via_diameter": 0.6,
@@ -485,6 +512,7 @@
         "microvia_drill": 0.1,
         "name": "VCC",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.6,
         "via_diameter": 0.6,
@@ -493,7 +521,7 @@
       }
     ],
     "meta": {
-      "version": 3
+      "version": 4
     },
     "net_colors": null,
     "netclass_assignments": null,
@@ -574,6 +602,7 @@
       ],
       "filter_string": "",
       "group_symbols": true,
+      "include_excluded_from_bom": false,
       "name": "Grouped By Value",
       "sort_asc": true,
       "sort_field": "Reference"
@@ -608,6 +637,7 @@
     "net_format_name": "",
     "page_layout_descr_file": "",
     "plot_directory": "",
+    "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,

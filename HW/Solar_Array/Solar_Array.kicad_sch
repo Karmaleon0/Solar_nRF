@@ -1,13 +1,15 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "011c63e0-39e1-4fa5-83a2-f641a2cc657e")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -74,14 +76,14 @@
 			)
 			(symbol "Conn_01x02_1_1"
 				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(rectangle
@@ -96,14 +98,14 @@
 					)
 				)
 				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
+					(start -1.27 -2.413)
+					(end 0 -2.667)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(pin passive line
@@ -143,9 +145,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -218,7 +223,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -230,7 +235,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -279,11 +284,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Jumper:SolderJumper_2_Open"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim yes)
 			(in_bom no)
 			(on_board yes)
@@ -349,30 +359,6 @@
 				)
 			)
 			(symbol "SolderJumper_2_Open_0_1"
-				(arc
-					(start -0.254 1.016)
-					(mid -1.2656 0)
-					(end -0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.254 1.016)
-					(mid -1.2656 0)
-					(end -0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
 				(polyline
 					(pts
 						(xy -0.254 1.016) (xy -0.254 -1.016)
@@ -385,6 +371,54 @@
 						(type none)
 					)
 				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(polyline
 					(pts
 						(xy 0.254 1.016) (xy 0.254 -1.016)
@@ -395,30 +429,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(arc
-					(start 0.254 -1.016)
-					(mid 1.2656 0)
-					(end 0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.254 -1.016)
-					(mid 1.2656 0)
-					(end 0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 			)
@@ -460,11 +470,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Sensor_Optical:BPW34"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -557,7 +572,19 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -1.27) (xy 0 1.27)
+						(xy -0.508 3.302) (xy -2.032 1.778) (xy -2.032 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy -2.54 0) (xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -581,19 +608,7 @@
 				)
 				(polyline
 					(pts
-						(xy -0.508 3.302) (xy -2.032 1.778) (xy -2.032 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy -2.54 0) (xy 0 -1.27)
+						(xy 0 -1.27) (xy 0 1.27)
 					)
 					(stroke
 						(width 0)
@@ -654,12 +669,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -750,12 +770,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:VCC"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -827,7 +852,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -839,7 +864,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -870,7 +895,77 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 233.68 72.39)
+		(end 261.62 121.92)
+		(stroke
+			(width 1)
+			(type dash)
+			(color 255 0 255 0.6)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 70353644-4ee6-43fb-b3d8-e645bd1d7ac4)
+	)
+	(rectangle
+		(start 50.8 54.61)
+		(end 88.9 139.7)
+		(stroke
+			(width 1)
+			(type dash)
+			(color 0 255 255 0.5)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 7bc06e85-df90-402b-a9e1-d6d8176ba985)
+	)
+	(rectangle
+		(start 114.3 54.61)
+		(end 205.74 139.7)
+		(stroke
+			(width 1)
+			(type dash)
+			(color 0 255 255 0.5)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 9cf345bc-5682-40de-a0a4-4d5155549af3)
+	)
+	(text "Solar Array\n"
+		(exclude_from_sim no)
+		(at 160.528 51.816 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "23987c6a-48e4-46e4-874e-36081bc3b0b8")
+	)
+	(text "Storage"
+		(exclude_from_sim no)
+		(at 69.85 51.816 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "5a2af3ad-213d-4581-bd10-971ea524b8d8")
+	)
+	(text "Headers"
+		(exclude_from_sim no)
+		(at 247.142 70.104 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "67951a32-f93d-4497-8aa1-a19477af0f1b")
 	)
 	(junction
 		(at 179.07 128.27)
@@ -1643,75 +1738,6 @@
 			(type default)
 		)
 		(uuid "fda64215-0718-453b-b59b-fafe11eaf03f")
-	)
-	(rectangle
-		(start 233.68 72.39)
-		(end 261.62 121.92)
-		(stroke
-			(width 1)
-			(type dash)
-			(color 255 0 255 0.6)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 70353644-4ee6-43fb-b3d8-e645bd1d7ac4)
-	)
-	(rectangle
-		(start 50.8 54.61)
-		(end 88.9 139.7)
-		(stroke
-			(width 1)
-			(type dash)
-			(color 0 255 255 0.5)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 7bc06e85-df90-402b-a9e1-d6d8176ba985)
-	)
-	(rectangle
-		(start 114.3 54.61)
-		(end 205.74 139.7)
-		(stroke
-			(width 1)
-			(type dash)
-			(color 0 255 255 0.5)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 9cf345bc-5682-40de-a0a4-4d5155549af3)
-	)
-	(text "Solar Array\n"
-		(exclude_from_sim no)
-		(at 160.528 51.816 0)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "23987c6a-48e4-46e4-874e-36081bc3b0b8")
-	)
-	(text "Storage"
-		(exclude_from_sim no)
-		(at 69.85 51.816 0)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "5a2af3ad-213d-4581-bd10-971ea524b8d8")
-	)
-	(text "Headers"
-		(exclude_from_sim no)
-		(at 247.142 70.104 0)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "67951a32-f93d-4497-8aa1-a19477af0f1b")
 	)
 	(label "+PD"
 		(at 69.85 63.5 0)
@@ -4594,4 +4620,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
